@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+@layer components {
+    .countdown {
+        @apply flex scale-200;
+    }
+    #timer {
+        @apply text-5xl font-semibold text-[#AF7E75] p-5 w-[900px];
+    }
+
+    #timer div {
+        @apply inline-block min-w-[90px] px-10 py-4 bg-white bg-opacity-20 backdrop-blur-lg rounded-xl m-3;
+    }
+
+    #timer div span {
+        @apply text-[#AF7E75] block mt-4 text-base font-[400]
+    };
+
+    .btn-primary {
+        @apply px-10 py-4 text-base font-medium text-center text-white transition duration-500 ease-in-out transform bg-secondary-color rounded-xl hover:bg-secondary-color/90 hover:scale-105 focus:outline-none;
+    }
+
+    .icon-location {
+        @apply flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-secondary-color;
+    }
+
+    .icon-location svg {
+        @apply w-8 h-8 text-white;
+    }
+
+    .description-location {
+        @apply mb-3 text-base font-semibold leading-5;
+    }
+};
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
