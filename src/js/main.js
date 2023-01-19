@@ -1,4 +1,6 @@
 
+// Countdown 
+
 const SECOND = 1000;
 const MINUTE = 60 * SECOND;
 const HOUR = 60 * MINUTE;
@@ -26,3 +28,21 @@ setInterval(() => {
         <div>${mins}<span>Minutos</span></div>
         <div>${secs}<span>Segundos</span></div>`;
 }, SECOND);
+
+// Music player
+$( document ).ready(function() {
+
+    $("#sonidoMusicaOff").click(function() {
+        var audio = document.getElementById("musica");
+        $("#sonidoMusicaOn").removeClass( "hidden" );
+        $("#sonidoMusicaOff").addClass( "hidden" );
+        audio.play(); // without this line it's not working although I have "muted" in HTML
+    });
+
+    $("#sonidoMusicaOn").click(function() {
+        var audio = document.getElementById("musica");
+        $("#sonidoMusicaOff").removeClass( "hidden" );
+        $("#sonidoMusicaOn").addClass( "hidden" );
+        audio.pause(); // without this line it's not working although I have "muted" in HTML
+    });
+});

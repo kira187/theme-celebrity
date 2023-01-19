@@ -707,6 +707,10 @@ video {
   display: grid;
 }
 
+.hidden {
+  display: none;
+}
+
 .h-screen {
   height: 100vh;
 }
@@ -970,6 +974,46 @@ video {
 
 .filter {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.musicaOff {
+  float: left;
+  right: 0;
+  top: 45%;
+  position: fixed;
+  transform-origin: 0 0;
+  background-color: #f69c9b;
+  letter-spacing: 3px;
+  font-family: montserrat;
+  color: #fff;
+  border-radius: 3px 0 0 3px;
+  padding: 12px;
+  font-weight: 100;
+  font-size: 22px;
+  width: 50px;
+  height: 50px;
+  z-index: 1000;
+  text-align: center;
+  cursor: pointer;
+}
+
+.musicaOn {
+  float: left;
+  right: 0;
+  top: 45%;
+  position: fixed;
+  transform-origin: 0 0;
+  background-color: #f69c9b;
+  letter-spacing: 3px;
+  font-family: montserrat;
+  color: #fff;
+  border-radius: 3px 0 0 3px;
+  font-weight: 100;
+  font-size: 22px;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  z-index: 1000;
 }
 
 #myBtn {
