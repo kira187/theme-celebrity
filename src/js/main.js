@@ -23,10 +23,18 @@ setInterval(() => {
     diff -= mins * MINUTE;
     const secs = addZero(Math.floor(diff / SECOND));
     document.querySelector("#timer").innerHTML = `
-        <div>${days}<span>Dias</span></div>
-        <div>${hours}<span>Horas</span></div>
-        <div>${mins}<span>Minutos</span></div>
-        <div>${secs}<span>Segundos</span></div>`;
+        <div class="timer-item-card">
+            <div> ${days} <span> Dias</span> </div>
+        </div>
+        <div class="timer-item-card">
+            <div> ${hours} <span> Horas</span> </div>
+        </div>
+        <div class="timer-item-card">
+            <div> ${mins} <span> Minutos </span> </div>
+        </div>
+        <div class="timer-item-card">
+            <div> ${secs} <span> Segundos </span> </div>
+        </div>`;
 }, SECOND);
 
 // Music player
