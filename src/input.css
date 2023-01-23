@@ -2,13 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-    font-family: "great-vibes";
-    src: url("./fonts/GreatVibes.ttf");
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&family=Montserrat:wght@300;400;700&family=Poppins:wght@300;400;700&display=swap');
-
 @layer components {
 
     .timer-container {
@@ -44,7 +37,7 @@
 .musicaOff {
     float: left;
     right: 0;
-    top: 45%;
+    top: 90%;
     position: fixed;
     -webkit-transform-origin: 0 0;
     -moz-transform-origin: 0 0;
@@ -71,7 +64,7 @@
 .musicaOn {
     float: left;
     right: 0;
-    top: 45%;
+    top: 90%;
     position: fixed;
     -webkit-transform-origin: 0 0;
     -moz-transform-origin: 0 0;

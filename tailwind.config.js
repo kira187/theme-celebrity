@@ -2,12 +2,16 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    fontFamily: {
-      poppins: ["Poppins", "sans-serif"]
-    },
     extend: {
+      fontFamily: {
+        poppins: ["Poppins", "sans-serif"],
+        'quicksand': ['Quicksand', 'sans-serif'],
+        'dancing-script': ['"Dancing Script"', 'cursive'],
+        'poiret-one': ['"Poiret One"', 'cursive'],
+      },
       backgroundImage: {
-        'hero': "url('/src/img/background.jpg')"
+        'hero': "url('../src/img/background.jpg')",
+        'hero-pattern': "url('../src/img/glamorous.svg')",
       },
       scale: {
         '175': '1.75',
