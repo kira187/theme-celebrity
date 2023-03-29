@@ -33,6 +33,56 @@
     }
 };
 
+/* Date styles */
+.appear-disappear {
+    opacity: 0;
+    animation: appear 6s ease forwards, disappear 6s ease forwards 12s alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes disappear {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+.typing-effect {
+    display: block;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 19ch;
+
+    animation: typing 5s steps(19), blink .7s infinite step-end alternate;
+    overflow: hidden;
+    animation-iteration-count: infinite;
+}
+
+@keyframes typing {
+
+    from {
+        width: 0
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
 
 .musicaOff {
     float: left;
