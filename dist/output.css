@@ -689,8 +689,8 @@ video {
   top: 3rem;
 }
 
-.bottom-36 {
-  bottom: 9rem;
+.bottom-56 {
+  bottom: 14rem;
 }
 
 .bottom-10 {
@@ -1280,9 +1280,14 @@ video {
   line-height: 1;
 }
 
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
 }
 
 .text-base {
@@ -1300,14 +1305,14 @@ video {
   line-height: 2.25rem;
 }
 
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
 }
 
 .text-lg {
@@ -1380,6 +1385,16 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-primary-color {
+  --tw-text-opacity: 1;
+  color: rgb(123 68 51 / var(--tw-text-opacity));
+}
+
+.text-secondary-color {
+  --tw-text-opacity: 1;
+  color: rgb(243 138 140 / var(--tw-text-opacity));
+}
+
 .text-gray-700 {
   --tw-text-opacity: 1;
   color: rgb(55 65 81 / var(--tw-text-opacity));
@@ -1393,11 +1408,6 @@ video {
 .text-gray-600 {
   --tw-text-opacity: 1;
   color: rgb(75 85 99 / var(--tw-text-opacity));
-}
-
-.text-secondary-color {
-  --tw-text-opacity: 1;
-  color: rgb(243 138 140 / var(--tw-text-opacity));
 }
 
 .text-gray-500 {
@@ -1479,6 +1489,56 @@ video {
 
 .duration-200 {
   transition-duration: 200ms;
+}
+
+/* Date styles */
+
+.appear-disappear {
+  opacity: 0;
+  animation: appear 6s ease forwards, disappear 6s ease forwards 12s alternate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes disappear {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.typing-effect {
+  display: block;
+  white-space: nowrap;
+  border-right: 4px solid;
+  width: 19ch;
+  animation: typing 5s steps(19), blink .7s infinite step-end alternate;
+  overflow: hidden;
+  animation-iteration-count: infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
 }
 
 .musicaOff {
@@ -1621,8 +1681,8 @@ video {
 }
 
 @media (min-width: 768px) {
-  .md\:bottom-44 {
-    bottom: 11rem;
+  .md\:bottom-60 {
+    bottom: 15rem;
   }
 
   .md\:order-first {
@@ -1695,6 +1755,11 @@ video {
   .md\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
+  }
+
+  .md\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 
   .md\:text-xl {
