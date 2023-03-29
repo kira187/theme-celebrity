@@ -421,8 +421,8 @@
                         <div class="w-full px-8 py-10 mx-auto overflow-hidden bg-white rounded-lg shadow-2xl lg:max-w-xl shadow-gray-300/50">
                             <h1 class="text-lg font-medium text-gray-600 uppercase text-center font-poppins">¿Asistiras a mi fiesta?</h1>
         
-                            <form class="mt-6">
-                                <div class="flex-1">
+                            <form class="mt-6"  id="confirm-form">
+                                <!-- <div class="flex-1">
                                     <label class="block mb-2 text-sm text-gray-600">Selecciona una opción</label>
                                     <div class="flex">
                                         <div class="form-check form-check-inline pr-2">
@@ -434,9 +434,9 @@
                                           <label class="form-check-label inline-block text-gray-800" for="inlineCheckbox2">No asistire</label>
                                         </div>
                                       </div>
-                                </div>
+                                </div> -->
         
-                                <div class="flex-1 mt-6">
+                                <!-- <div class="flex-1 mt-6">
                                     <label class="block mb-2 text-sm text-gray-600">Personas confirmadas</label>
                                     <div class="relative inline-block w-full text-gray-400">
                                         <select class="w-full h-10 pl-3 pr-6 text-base border rounded-lg appearance-none focus:shadow-outline" placeholder="Regular input">
@@ -449,16 +449,26 @@
                                         </div>
                                       </div>
                                       
-                                    <!-- <input type="email" placeholder="johndoe@example.com" class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" /> -->
-                                </div>
+                                    <input type="email" placeholder="johndoe@example.com" class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+                                </div> -->
         
-                                <div class="w-full mt-6">
+                                <!-- <div class="w-full mt-6">
                                     <label class="block mb-2 text-sm text-gray-600">¡Felicita a Regina!</label>
                                     <textarea class="block w-full h-32 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md md:h-48 focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"></textarea>
+                                </div> -->
+
+                                <div class="flex-1 mt-6">
+                                    <input
+                                        id="name"
+                                        type="text"
+                                        placeholder="Ingresa tu nombre"
+                                        name="name"
+                                        required pattern="[A-Za-z0-9 ]+"
+                                        class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
                                 </div>
-        
-                                <button class="w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide text-white transition-colors duration-300 transform bg-secondary-color rounded-md hover:bg-secondary-color/90 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50 uppercase">
-                                    Enviar
+
+                                <button type="submit" class="w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide text-white transition-colors duration-300 transform bg-secondary-color rounded-md hover:bg-secondary-color/90 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50 uppercase">
+                                    Confirmar <i class='bx bxl-whatsapp text-xl'></i>
                                 </button>
                             </form>
                         </div>
