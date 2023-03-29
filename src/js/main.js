@@ -14,7 +14,7 @@ function addZero(number) {
 }
 
 setInterval(() => {
-    let diff = Date.parse("Apr 01, 2023 20:00:00") - Date.now();
+    let diff = Date.parse("2023-05-12 17:30:00") - Date.now();
     const days = addZero(Math.floor(diff / DAY));
     diff -= days * DAY;
     const hours = addZero(Math.floor(diff / HOUR));
