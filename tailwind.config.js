@@ -10,18 +10,22 @@ module.exports = {
         'poiret-one': ['"Poiret One"', 'cursive'],
       },
       backgroundImage: {
-        'hero': "url('../src/img/background.jpg')",
-        'hero-pattern': "url('../src/img/glamorous.svg')",
+        'hero': "url('../src/img/bg-2.jpg')",
+        'flower': "url('../src/img/flower-medium.svg')",
+        'pattern-diamond': "url('../src/img/glamorous.svg')",
       },
       scale: {
         '175': '1.75',
         '200': '2',
       },
       colors: {
-        'primary-color': '#7B4433',
-        'secondary-color': '#F38A8C',
+        'primary': '#c1121f',
+        'secondary': '#E19991',
+        'default': '#F3EED',
+        'altern': '#85AEE1'
       },
     },
   },
-  plugins: [],
+  plugins: [
+  ],
 }

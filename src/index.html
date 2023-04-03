@@ -8,29 +8,28 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poiret+One&family=Poppins:wght@300;500;700&family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
         
-        <link href="../dist/output.css" rel="stylesheet">
-        <link rel="stylesheet" href="../dist/custom.css">
+        <link href="../dist/tailwind.css" rel="stylesheet">
+        <link rel="stylesheet" href="../dist/main.css">
+        <link rel="stylesheet" href="../dist/fontawesome/css/fontawesome.min.css">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     </head>
     <body>
         
       <!-- Home -->
-        <section class="h-screen bg-hero flex flex-col items-center justify-center text-center relative">
-            <h2 class="text-4xl font-bold text-white font-dancing-script absolute top-12 text-primary-color">
+        <section class="h-screen bg-hero bg-cover flex flex-col items-center justify-center text-center relative">
+            <h2 class="text-4xl font-bold font-dancing-script absolute top-12 text-[#780000]">
                 <span class="appear-disappear">⋆</span>Mis <span class="text-7xl"> XV </span> Años<span class="appear-disappear">⋆</span>
             </h2>
             <h1 class="text-5xl md:text-6xl font-semibold font-dancing-script">Sophie Ximena</h1>
-            <h3 class="tracking-wide text-white absolute bottom-56 md:bottom-60 text-2xl md:text-3xl font-poppins text-secondary-color" id="event-date">
+            <h3 class="tracking-wide absolute bottom-56 md:bottom-60 text-2xl md:text-3xl font-poppins text-secondary-color" id="event-date">
                 <span class="typing-effect">Viernes <span class="text-6xl font-bold font-dancing-scrip relative">12</span> de Mayo</span>
             </h3>
-
-            <div class="timer-container absolute bottom-10 md:bottom-18" id="timer">
-            </div>
+            <div class="timer-container absolute bottom-10 md:bottom-18" id="timer"></div>
         </section>
         <!-- End Home  -->
         
         <!-- Welcome mesage -->
-        <div class="px-4 py-16 mx-auto max-w-ful md:px-24 lg:px-8 lg:py-20 bg-gray-50">
+        <div class="px-4 py-32 mx-auto max-w-ful md:px-24 lg:px-8 bg-gradient-to-b from-[#FFF3F2] to-white">
             <div class="max-w-xl mb-5 md:mx-auto text-center lg:max-w-2xl">
               <p class="text-base text-gray-700 md:text-xl font-thin">
                 Hoy quiero compartir mi alegría con todas las personas a las que amo y me aman, por eso tú tienes que ser parte de esta fiesta.
@@ -79,134 +78,92 @@
                     -14 1019 -14 892 0 989 2 1020 16 42 20 64 59 64 115 0 33 -6 47 -34 75 l-34
                     34 -1016 0 -1016 0 -37 -33z"/>
                     </g>
-                    </svg>
-              <div>
-                <p class="font-semibold text-gray-800">Familia Aguas</p>
-                <span class="text-sm font-medium leading-4 text-gray-600">6 Miembros</span>
-              </div>
+                </svg>
             </div>
             <div class="text-center">
-              <p class="inline-flex items-center font-semibold text-secondary-color text-3xl font-dancing-script">¡Nos hará muy feliz contar con su presencia ese día!</p>
+              <p class="inline-flex items-center font-semibold text-[#780000] text-3xl font-dancing-script">¡Nos hará muy feliz contar con su presencia ese día!</p>
             </div>
           </div>
         <!-- End Welcome message -->
 
         <!-- Familiares -->
-        <section class="bg-white ">
-            <div class="container px-6 py-10 mx-auto">
-                <div class="text-center">
-                  <span class="text-sm font-bold tracking-widest text-secondary-color uppercase font-poppins"> Personal</span>
-                    <h1 class="mb-8 mt-2 text-3xl md:text-4xl font-semibold leading-none tracking-tighter text-gray-600 font-poppins">Familiares</h1>
-                </div>
-        
-                <p class="max-w-2xl mx-auto my-6 text-center text-gray-500 ">
-                    Hace 15 años Dios me regalo la vida y a una gran familia, acompáñanos a  festejar juntos mi cumpleaños numero XV en compañía de mis padres y familiares.
-                </p>
-                
-                <div class="grid max-w-fit grid-cols-1 md:grid-cols-2 mx-auto text-center shadow-md rounded-xl mt-8 xl:mt-16">
-                  <div class="flex flex-col p-6">
-                    <img src="https://source.unsplash.com/150x150/?portrait?3" alt="" class="w-20 h-20 mx-auto rounded-full">
-                    <div class="space-y-4 text-center">
-                      <div class="my-2 space-y-1">
-                        <h2 class="text-xl font-semibold sm:text-base text-gray-600">Juan Enrique Vasquez Jimenez</h2>
-                        <p class="px-5 text-xs sm:text-base text-gray-500">Padre</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="flex flex-col p-6">
-                    <img src="https://source.unsplash.com/150x150/?portrait?3" alt="" class="w-20 h-20 mx-auto rounded-full">
-                    <div class="space-y-4 text-center">
-                      <div class="my-2 space-y-1">
-                        <h2 class="text-xl font-semibold sm:text-base text-gray-600">Marlen Ximena Lopez Jimenez</h2>
-                        <p class="px-5 text-xs sm:text-base text-gray-500">Madre</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="grid max-w-fit grid-cols-1 md:grid-cols-2 mx-auto text-center shadow-md rounded-xl mt-8 xl:mt-16">
-                  <div class="flex flex-col p-6">
-                    <img src="https://source.unsplash.com/150x150/?portrait?3" alt="" class="w-20 h-20 mx-auto rounded-full">
-                    <div class="space-y-4 text-center">
-                      <div class="my-2 space-y-1">
-                        <h2 class="text-xl font-semibold sm:text-base text-gray-600">Juan Enrique Vasquez Jimenez</h2>
-                        <p class="px-5 text-xs sm:text-base text-gray-500">Padre</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="flex flex-col p-6">
-                    <img src="https://source.unsplash.com/150x150/?portrait?3" alt="" class="w-20 h-20 mx-auto rounded-full">
-                    <div class="space-y-4 text-center">
-                      <div class="my-2 space-y-1">
-                        <h2 class="text-xl font-semibold sm:text-base text-gray-600">Marlen Ximena Lopez Jimenez</h2>
-                        <p class="px-5 text-xs sm:text-base text-gray-500">Madre</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+        <section class="bg-gradient-to-b from-white to-gray-50">
+          <div class="container px-6 py-10 mx-auto">
+            <div class="text-center">
+                <h1 class="section-title">Familiares</h1>
             </div>
+    
+            <p class="max-w-2xl mx-auto my-6 text-center text-gray-500 ">
+                Hace 15 años Dios me regalo la vida y a una gran familia, acompáñanos a  festejar juntos mi cumpleaños numero XV en compañía de mis padres y familiares.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 text-center mt-8 xl:mt-16 gap-12 md:gap-4">
+              <div class="flex flex-col items-center">
+                  <img class="w-60 h-60 mb-3 rounded-full shadow-md object-cover" src="https://previews.123rf.com/images/michaeljung/michaeljung1501/michaeljung150100097/35128897-retrato-de-los-j%C3%B3venes-amantes-de-pareja-abrazada.jpg"/>
+                  <h5 class="mb-2 text-xl font-light text-gray-900">
+                    Josue Saldivar Solano 
+                    <span class="block lg:inline"> & </span> 
+                    Gloria Espejo Hernandez</h5>
+                  <span class="text-xs font-bold tracking-widest text-[#003049]/80 uppercase font-poppins">Padres</span>
+              </div>
+              <div class="flex flex-col items-center">
+                  <img class="w-60 h-60 mb-3 rounded-full shadow-md object-cover" src="https://previews.123rf.com/images/jackf/jackf1803/jackf180302875/96984679-pareja-adulta-enamorada-posando-al-aire-libre-en-un-d%C3%ADa-soleado.jpg"/>
+                  <h5 class="mb-2 text-xl font-light text-gray-900">
+                    Jorge Rodriguez Ramirez
+                    <span class="block lg:inline"> & </span> 
+                    Adriana Espejo Hernandez</h5>
+                  <span class="text-xs font-bold tracking-widest text-[#003049]/80 uppercase font-poppins">Padrinos</span>
+              </div>
+            </div>
+          </div>
         </section>
 
         
         <!-- End familiares -->
 
         <!-- Location  Ceremony-->
-        <section>
+        <section class="bg-gray-50">
             <div class="px-4 py-12 mx-auto max-w-7xl sm:px-6 md:px-12 lg:px-24 lg:py-24">
             <div class="flex flex-wrap items-center mx-auto max-w-7xl justify-center">
                 <div class="w-full lg:max-w-lg lg:w-1/2 rounded-xl">
                     <div>
                         <div class="relative w-full max-w-lg object-center mx-auto">
-                            <img class="object-cover rounded-lg shadow-2xl" alt="hero" src="./img/santa-cruz.png">
+                            <img class="object-cover rounded-lg shadow-2xl" alt="hero" src="./img/iglesia.jpg">
                         </div>
                     </div>
                 </div>
                 <div class="flex flex-col items-start mt-12 mb-10 text-left lg:flex-grow lg:w-1/2 lg:pl-6 xl:pl-24 md:mb-0 xl:mt-0">
-                    <span class="mb-4 md:mb-6 text-sm font-bold tracking-widest text-secondary-color uppercase font-poppins"> CEREMONIA RELIGIOSA</span>
-                    <h1 class="mb-8 text-3xl md:text-4xl font-semibold leading-none tracking-tighter text-gray-600 font-poppins">Parroquia de San Gerardo Mayela</h1>
-                    <div class="grid max-w-screen-lg gap-2 mx-auto">
-                        <div class="flex flex-row max-w-md sm:mx-auto">
-                            <div class="mr-4">
-                                <div class="icon-location">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
-                                    </svg>
-                                </div>
-                            </div>
-                            <div>
-                                <h6 class="description-location">C. Israel Gonzalez S/N, Modelo, 83190 Hermosillo, Son.</h6>
-                            </div>
-                        </div>
-                        <div class="flex flex-row max-w-md items-center">
-                            <div class="mr-4">
-                                <div class="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-secondary-color shadow-lg">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-white">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z" />
-                                    </svg>
-                                </div>
-                            </div>
-                            <div>
-                                <h6 class="mb-3 text-base font-semibold leading-5">Sábado 1 de Abril, 2023</h6>
-                            </div>
-                        </div>
-                        <div class="flex flex-row max-w-md items-center">
-                            <div class="mr-4">
-                                <div class="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-secondary-color">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-white">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
-                                    </svg>
-                                </div>
-                            </div>
-                            <div>
-                                <h6 class="mb-3 text-base font-semibold leading-5">5:00 PM</h6>
-                            </div>
-                        </div>
-                        <div class="mt-10 text-center">
-                            <div class="block">
-                                <button class="btn-primary">Abir Mapa</button>
-                            </div>
-                        </div>
+                    
+                  <span class="section-subtitle"> CEREMONIA RELIGIOSA</span>
+                    
+                    <h1 class="section-title">Santuario Nuestra Señora de la Soledad</h1>
+
+                    <div class="grid max-w-screen-lg gap-2">
+                      <div class="item-location">
+                          <div class="icon-location">
+                            <i class='bx bx-map text-white bx-sm' ></i>
+                          </div>
+                          <h6 class="info-location">C. Morelos #191, San Pedro Tlaquepaque</h6>
+                      </div>
+
+                      <div class="item-location">
+                          <div class="icon-location">
+                            <i class='bx bx-calendar-check text-white bx-sm'></i>
+                          </div>
+                          <h6 class="info-location">Viernes 1 de Mayo del 2023</h6>
+                      </div>
+                      
+                      <div class="item-location">
+                          <div class="icon-location">
+                            <i class='bx bx-time-five text-white bx-sm'></i>
+                          </div>
+                          <h6 class="info-location">05:30 PM</h6>
+                      </div>
+
+                      <div class="mt-10 text-center">
+                          <div class="block">
+                              <a href="https://goo.gl/maps/fehQ5xgXy1okuKsQ6" class="btn-primary">Abrir Mapa</a>
+                          </div>
+                      </div>
                     </div>
                 </div>
             </div>
@@ -214,64 +171,47 @@
         <!-- End ceremony -->
         
         <!-- Location party  -->
-        <section>
+        <section class="bg-gradient-to-b from-gray-50 to-white">
             <div class="px-4 pb-12 mx-auto max-w-7xl sm:px-6 md:px-12 lg:px-24 lg:py-10">
                 <div class="flex flex-wrap items-center justify-center mx-auto max-w-7xl">
-                    <div class="order-last md:order-first flex flex-col items-start mt-12 mb-16 text-left lg:flex-grow lg:w-1/2 lg:pr-6 xl:pr-24 md:mb-0 xl:mt-0">
-                        <span class="mb-4 md:mb-8 text-xs font-bold tracking-widest text-secondary-color uppercase font-poppins"> Recepción</span>
-                        <h1 class="mb-8 text-3xl md:text-4xl font-bold leading-none tracking-tighter text-gray-600">Atrium Eventos Anahuac</h1>
-                        <div class="grid max-w-screen-lg gap-2 mx-auto">
-                            <div class="flex flex-row max-w-md sm:mx-auto">
-                                <div class="mr-4">
-                                    <div class="icon-location">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
-                                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
-                                        </svg>
-                                    </div>
+                    <div class="order-last lg:order-first flex flex-col items-start mt-12 mb-16 text-left lg:flex-grow lg:w-1/2 lg:pr-6 xl:pr-24 md:mb-0 xl:mt-0">
+                        <span class="section-subtitle"> Recepción</span>
+                        <h1 class="section-title">AMBIA "Terraza Jardín"</h1>
+                        <div class="grid max-w-full gap-2">
+                            
+                            <div class="item-location">
+                                <div class="icon-location">
+                                  <i class='bx bx-map text-white bx-sm' ></i>
                                 </div>
-                                <div>
-                                    <h6 class="description-location">Blvd. Emilio Arizpe de la Maza 1899, Rancho el Mimbre, 25080 Saltillo, Coah.</h6>
-                                </div>
+                                <h6 class="info-location">Calle José Martí 14, Tonalá Centro.</h6>
                             </div>
-                            <div class="flex flex-row max-w-md items-center">
-                                <div class="mr-4">
-                                    <div class="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-secondary-color shadow-lg">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-white">
-                                            <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z" />
-                                        </svg>
-                                    </div>
+
+                            <div class="item-location">
+                                <div class="icon-location">
+                                  <i class='bx bx-calendar-check text-white bx-sm'></i>
                                 </div>
-                                <div>
-                                    <h6 class="mb-3 text-base font-semibold leading-5">Sábado 17 de Abril, 2023</h6>
-                                </div>
+                                <h6 class="info-location">Viernes 1 de Mayo del 2023</h6>
                             </div>
-                            <div class="flex flex-row max-w-md items-center">
-                                <div class="mr-4">
-                                    <div class="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-secondary-color">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-white">
-                                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
-                                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
-                                        </svg>
-                                    </div>
+                            
+                            <div class="item-location">
+                                <div class="icon-location">
+                                  <i class='bx bx-time-five text-white bx-sm'></i>
                                 </div>
-                                <div>
-                                    <h6 class="mb-3 text-base font-semibold leading-5">7:40 PM</h6>
-                                </div>
+                                <h6 class="info-location">08:00 PM</h6>
                             </div>
+
                             <div class="mt-10 text-center">
                                 <div class="block">
-                                    <button class="btn-primary">Abir Mapa</button>
+                                    <a href="https://goo.gl/maps/1J8fVVVnNixykdGi8" class="btn-primary">Abrir Mapa</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="w-full lg:max-w-lg lg:w-1/2 rounded-xl">
-                        <div>
-                            <div class="relative w-full max-w-lg object-center mx-auto">
-                                <img class="object-cover object-center mx-auto rounded-lg shadow-2xl" alt="hero" src="https://invites-now.com/wp-content/uploads/2022/07/AF1QipOVVlC_1FzK2GSPgRr5irxxvecvvLD_a3N_obziw408-h271-k-no.jpeg">
-                            </div>
-                        </div>
+                      <div class="relative w-full max-w-lg object-center mx-auto">
+                          <img class="object-cover object-center mx-auto rounded-lg shadow-2xl" alt="hero" 
+                          src="https://notiyuc.com/wp-content/uploads/2021/05/los-salones-de-fiestas-estan___Qa_fpbiyr_1200x630__1.jpg">
+                      </div>                        
                     </div>
                 </div>
             </div>
@@ -280,10 +220,11 @@
         
         <!-- Starts Music player -->
         <button class="musicaOff" id="sonidoMusicaOff">
-          <i class='bx bx-volume-full' id="iconoMusica"></i>
+          <i class='bx bx-play-circle' id="iconoMusica"></i>
         </button>
+
         <button class="musicaOn hidden" id="sonidoMusicaOn" style="cursor: pointer;">
-        <img src="./img/musica-on.gif">
+          <img src="./img/musica-on.gif">
         </button>
         <!-- End Music Player -->
         
@@ -304,7 +245,7 @@
                 Tu presencia es mi mayor regalo, pero si deseas tener un detalle conmigo, te doy algunas ideas.
               </p>
             </div>
-            <div class="grid  gap-5 mb-8 md:grid-cols-2 sm:mx-auto lg:max-w-full">
+            <div class="grid gap-5 mb-8 md:grid-cols-2 sm:mx-auto lg:max-w-full">
               <div class="px-10 py-20 text-center shadow hover:shadow-xl duration-300 rounded-lg lg:px-5 lg:py-10 xl:py-20">
                 <img class="inline-block max-w-xs mx-auto mb-3 h-12 object-cover" src="/src/img/liverpool.png" alt="">
                 <p class="max-w-xs mx-auto mb-2 text-gray-600 font-quicksand">
@@ -320,7 +261,7 @@
                 <a href="/" aria-label="" class="inline-flex btn-primary bottom-auto">Ver Mesa</a>
               </div>
             </div>
-          </div>
+        </div>
 
         <!-- <section class="text-gray-600 body-font">
             <div class="container px-5 py-24 mx-auto">
@@ -402,66 +343,32 @@
                 <button class="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
             </div>
         </section> -->
+
         <!-- Form invitacion -->
-        <section class="bg-pink-50">
+        <section class="bg-[#fdf0d5]">
             <div class="container px-6 py-12 mx-auto">
                 <div class="lg:flex lg:items-center lg:-mx-6">
                     <div class="lg:w-1/2 lg:mx-6 text-center md:text-left">
-                        <h1 class="text-3xl font-semibold text-gray-700 lg:text-3xl uppercase font-poppins"> Confirmación </h1>
+                        <h1 class="text-3xl font-semibold text-[#003049] lg:text-3xl uppercase font-poppins"> Confirmación </h1>
         
                         <div class="mt-6 space-y-8 md:mt-8">
                             <p class="flex items-start -mx-2">
-                                <span class="mx-2 text-gray-600 md:text-sm font-poppins">
+                                <span class="mx-2 text-[#003049] md:text-sm font-poppins">
                                     Es muy importante para nosotros contar con tu confirmación, lo antes posible.
                                 </span>
                             </p>
                         </div>
         
                         <div class="mt-6 md:mt-16">
-                            <h3 class=" font-dancing-script text-4xl text-secondary-color">¡No puedes faltar!</h3>
+                            <h3 class=" font-dancing-script text-4xl text-[#c1121f]">¡No puedes faltar!</h3>
                         </div>
                     </div>
         
                     <div class="mt-8 lg:w-1/2 lg:mx-6">
                         <div class="w-full px-8 py-10 mx-auto overflow-hidden bg-white rounded-lg shadow-2xl lg:max-w-xl shadow-gray-300/50">
-                            <h1 class="text-lg font-medium text-gray-600 uppercase text-center font-poppins">¿Asistiras a mi fiesta?</h1>
+                            <h1 class="text-lg font-medium text-[#003049] uppercase text-center font-poppins">¿Asistiras a mi fiesta?</h1>
         
                             <form class="mt-6"  id="confirm-form">
-                                <!-- <div class="flex-1">
-                                    <label class="block mb-2 text-sm text-gray-600">Selecciona una opción</label>
-                                    <div class="flex">
-                                        <div class="form-check form-check-inline pr-2">
-                                          <input class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" type="checkbox" id="inlineCheckbox1" value="option1">
-                                          <label class="form-check-label inline-block text-gray-800" for="inlineCheckbox1">Asistire</label>
-                                        </div>
-                                        <div class="form-check form-check-inline">
-                                          <input class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" type="checkbox" id="inlineCheckbox2" value="option2">
-                                          <label class="form-check-label inline-block text-gray-800" for="inlineCheckbox2">No asistire</label>
-                                        </div>
-                                      </div>
-                                </div> -->
-        
-                                <!-- <div class="flex-1 mt-6">
-                                    <label class="block mb-2 text-sm text-gray-600">Personas confirmadas</label>
-                                    <div class="relative inline-block w-full text-gray-400">
-                                        <select class="w-full h-10 pl-3 pr-6 text-base border rounded-lg appearance-none focus:shadow-outline" placeholder="Regular input">
-                                          <option>1</option>
-                                          <option>2</option>
-                                          <option>3</option>
-                                        </select>
-                                        <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
-                                          <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
-                                        </div>
-                                      </div>
-                                      
-                                    <input type="email" placeholder="johndoe@example.com" class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
-                                </div> -->
-        
-                                <!-- <div class="w-full mt-6">
-                                    <label class="block mb-2 text-sm text-gray-600">¡Felicita a Regina!</label>
-                                    <textarea class="block w-full h-32 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md md:h-48 focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"></textarea>
-                                </div> -->
-
                                 <div class="flex-1 mt-6">
                                     <input
                                         id="name"
@@ -472,8 +379,8 @@
                                         class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
                                 </div>
 
-                                <button type="submit" class="w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide text-white transition-colors duration-300 transform bg-secondary-color rounded-md hover:bg-secondary-color/90 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50 uppercase">
-                                    Confirmar <i class='bx bxl-whatsapp text-2xl'></i>
+                                <button type="submit" class="w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide text-white transition-colors duration-300 transform bg-primary rounded-md hover:bg-primary/90 focus:outline-none uppercase">
+                                    Confirmar <i class="fa-brands fa-whatsapp text-white"></i>
                                 </button>
                             </form>
                         </div>
@@ -488,8 +395,8 @@
             <div class="px-4 py-1 mx-auto bg-gray-50 max-w-7xl sm:px-6 lg:px-16">
                 <div class="flex flex-wrap items-baseline lg:justify-center">
                     <span class="mt-2 text-sm font-light text-gray-500">
-                    Copyright © 2022
-                    <a href="https://wickedlabs.dev" class="mx-2 text-wickedblue hover:text-gray-500" rel="noopener noreferrer">Misael AJ</a>
+                    Copyright © 2023
+                    <a href="https://wickedlabs.dev" class="mx-2 text-wickedblue hover:text-gray-500" rel="noopener noreferrer">InvitacionesOK</a>
                     </span>
                 </div>
             </div>
