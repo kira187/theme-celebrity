@@ -39,6 +39,14 @@
     .section-title {
         @apply mb-8 text-2xl md:text-3xl font-bold leading-none tracking-tighter text-[#780000];
     }
+
+    .title-class {
+        @apply text-gray-900 !important;
+    }
+    
+    .btn-confirm-swall {
+        @apply w-24 rounded-full py-2 !important;
+    }
 };
 
 /* Date styles */
@@ -92,34 +100,7 @@
     }
 }
 
-.musicaOff {
-    float: left;
-    right: 0;
-    top: 90%;
-    position: fixed;
-    -webkit-transform-origin: 0 0;
-    -moz-transform-origin: 0 0;
-    -ms-transform-origin: 0 0;
-    -o-transform-origin: 0 0;
-    transform-origin: 0 0;
-    background-color: #780000;
-    letter-spacing: 3px;
-    font-family: montserrat;
-    color: #fff;
-    border-radius: 3px 0 0 3px;
-    padding: 12px;
-    font-weight: 100;
-    font-size: 22px;
-    cursor: pointer;
-    width: 50px;
-    height: 50px;
-    z-index: 1000;
-    text-align: center;
-    cursor: pointer;
-}
-
-
-.musicaOn {
+.btn-player {
     float: left;
     right: 0;
     top: 90%;
@@ -135,7 +116,7 @@
     color: #fff;
     border-radius: 3px 0 0 3px;
     font-weight: 100;
-    font-size: 22px;
+    font-size: 5px;
     cursor: pointer;
     width: 50px;
     height: 50px;

@@ -13,6 +13,9 @@
         <link href="../dist/fontawesome/css/fontawesome.min.css" rel="stylesheet">
         <link href="../dist/plugins/lightbox/css/lightbox.min.css" rel="stylesheet">
         <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        rel="stylesheet">
     </head>
     <body>
         
@@ -214,12 +217,10 @@
         <!-- End ceremony -->
         
         <!-- Starts Music player -->
-        <button class="musicaOff" id="sonidoMusicaOff">
-          <i class='bx bx-play-circle' id="iconoMusica"></i>
-        </button>
+        <audio id="song" src="/dist/audio/theme.mp3"></audio>
 
-        <button class="musicaOn hidden" id="sonidoMusicaOn" style="cursor: pointer;">
-          <img src="./img/musica-on.gif">
+        <button class="btn-player" id="btn-player" onclick="musicPlayer()">
+          <i class="bx bx-play-circle bx-md"></i>
         </button>
         <!-- End Music Player -->
         
@@ -448,6 +449,7 @@
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
         <script src="/dist/plugins/lightbox/js/lightbox.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
         <script src="./js/main.js"></script>
     </body>
 </html>

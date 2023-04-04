@@ -10,7 +10,7 @@ module.exports = {
         'poiret-one': ['"Poiret One"', 'cursive'],
       },
       backgroundImage: {
-        'hero': "url('../src/img/bg-2.jpg')",
+        'hero': "url('../src/img/bg-4.jpg')",
         'flower': "url('../src/img/flower-medium.svg')",
         'pattern-diamond': "url('../src/img/glamorous.svg')",
       },

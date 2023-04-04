@@ -37,23 +37,21 @@ setInterval(() => {
         </div>`;
 }, SECOND);
 
-// Music player
-$( document ).ready(function() {
-
-    $("#sonidoMusicaOff").click(function() {
-        var audio = document.getElementById("musica");
-        $("#sonidoMusicaOn").removeClass( "hidden" );
-        $("#sonidoMusicaOff").addClass( "hidden" );
-        audio.play(); // without this line it's not working although I have "muted" in HTML
-    });
-
-    $("#sonidoMusicaOn").click(function() {
-        var audio = document.getElementById("musica");
-        $("#sonidoMusicaOff").removeClass( "hidden" );
-        $("#sonidoMusicaOn").addClass( "hidden" );
-        audio.pause(); // without this line it's not working although I have "muted" in HTML
-    });
-});
+function musicPlayer() {
+    let audio = document.getElementById("song");
+    let btnPlayer = document.getElementById("btn-player");
+    
+    if (audio.currentTime === 0 ) {
+        btnPlayer.innerHTML = '<img src="./img/musica-on.gif">';
+        audio.play();
+    } else if(audio.paused && audio.currentTime > 0 && !audio.ended) {
+        btnPlayer.innerHTML = '<img src="./img/musica-on.gif">';
+        audio.play();
+    } else {
+        btnPlayer.innerHTML = '<i class="bx bx-play-circle bx-md"></i>';
+        audio.pause();
+     }
+}
 
 // Confirm form
 $('#confirm-form').submit(function (event) {
@@ -64,3 +62,27 @@ $('#confirm-form').submit(function (event) {
     const url = 'https://api.whatsapp.com/send?phone=' + phoneNumber + '&text=' + text;
     window.open(url, '_blank');
 });
+
+Swal.fire({
+    title: 'Bienvenido!',
+    text: 'A la invitacion de Sophie Ximena',
+    confirmButtonColor: '#C1121F',
+    confirmButtonText: 'Ingresar',
+    allowOutsideClick: false,
+    background: '#f3f4f6',
+    backdrop: `rgba(0, 0, 0, 0.8)`,
+    customClass: {
+        title: 'title-class',
+        confirmButton: 'btn-confirm-swall'
+    },
+    showClass: {
+        popup: 'animate__animated animate__zoomIn',
+    },
+    hideClass: {
+        popup: 'animate__animated animate__zoomOut',
+    }
+  }).then((result) => {
+    if (result.isConfirmed) {
+      musicPlayer();
+    }
+  })
