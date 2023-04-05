@@ -63,29 +63,30 @@ $('#confirm-form').submit(function (event) {
     window.open(url, '_blank');
 });
 
-// Swal.fire({
-//     title: 'Bienvenido!',
-//     text: 'A la invitacion de Sophie Ximena',
-//     confirmButtonColor: '#C1121F',
-//     confirmButtonText: 'Ingresar',
-//     allowOutsideClick: false,
-//     background: '#f3f4f6',
-//     backdrop: `rgba(0, 0, 0, 0.8)`,
-//     customClass: {
-//         title: 'title-class',
-//         confirmButton: 'btn-confirm-swall'
-//     },
-//     showClass: {
-//         popup: 'animate__animated animate__zoomIn',
-//     },
-//     hideClass: {
-//         popup: 'animate__animated animate__zoomOut',
-//     }
-//   }).then((result) => {
-//     if (result.isConfirmed) {
-//       musicPlayer();
-//     }
-//   })
+Swal.fire({
+    title: 'Bienvenido!',
+    text: 'A la invitacion de Sophie Ximena',
+    confirmButtonColor: '#C1121F',
+    confirmButtonText: 'Ingresar',
+    allowOutsideClick: false,
+    background: '#f3f4f6',
+    backdrop: `rgba(0, 0, 0, 0.8)`,
+    customClass: {
+        title: 'title-class',
+        confirmButton: 'btn-confirm-swall'
+    },
+    showClass: {
+        popup: 'animate__animated animate__zoomIn',
+    },
+    hideClass: {
+        popup: 'animate__animated animate__zoomOut',
+    }
+  }).then((result) => {
+    if (result.isConfirmed) {
+      musicPlayer();
+    }
+  })
+
 const sr = ScrollReveal({
 	origin: 'top',
 	distance: '60px',
