@@ -122,3 +122,9 @@ sr.reveal('.galery_item_6', {scale: 0.85, delay: 950});
 
 sr.reveal('.section_mesa_regalos');
 sr.reveal('.section_confirmation',{ origin: 'bottom',duration: 2000 });
+
+lightbox.option({
+    'alwaysShowNavOnTouchDevices': true,
+    'disableScrolling': true,
+    'wrapAround': true
+});
