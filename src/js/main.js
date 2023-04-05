@@ -53,6 +53,16 @@ function musicPlayer() {
      }
 }
 
+window.addEventListener('scroll', () => {
+    let btnPlayer = document.getElementById("btn-player");
+
+    if (window.scrollY > 100) {
+      btnPlayer.classList.add('mostrar');
+    } else {
+      btnPlayer.classList.remove('mostrar');
+    }
+});
+
 // Confirm form
 $('#confirm-form').submit(function (event) {
     event.preventDefault();
@@ -89,7 +99,6 @@ Swal.fire({
 
 const sr = ScrollReveal({
 	origin: 'top',
-	distance: '60px',
 	duration: 2500,
 })
 

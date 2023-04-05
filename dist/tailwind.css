@@ -572,10 +572,10 @@ video {
   border-radius: 0.75rem;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   --tw-bg-opacity: 0.2;
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   --tw-backdrop-blur: blur(16px);
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
           backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
@@ -732,8 +732,8 @@ video {
   bottom: 14rem;
 }
 
-.bottom-10 {
-  bottom: 2.5rem;
+.bottom-5 {
+  bottom: 1.25rem;
 }
 
 .order-last {
@@ -1382,6 +1382,8 @@ video {
 }
 
 .btn-player {
+  display: none;
+  opacity: 0;
   float: left;
   right: 0;
   top: 90%;
@@ -1398,6 +1400,11 @@ video {
   width: 50px;
   height: 50px;
   z-index: 1000;
+}
+
+.mostrar {
+  display: block;
+  opacity: 1;
 }
 
 .hover\:bg-primary\/90:hover {
