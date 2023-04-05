@@ -10,7 +10,7 @@ module.exports = {
         'poiret-one': ['"Poiret One"', 'cursive'],
       },
       backgroundImage: {
-        'hero': "url('/src/img/bg-4.jpg')",
+        'hero': "url('/src/img/galery/item_6.jpg')",
         'flower': "url('/src/img/flower-medium.svg')",
         'pattern-diamond': "url('/src/img/glamorous.svg')",
       },
@@ -19,7 +19,7 @@ module.exports = {
         '200': '2',
       },
       colors: {
-        'primary': '#c1121f',
+        'primary': '#DF2E38',
         'secondary': '#E19991',
         'default': '#F3EED',
         'altern': '#85AEE1'

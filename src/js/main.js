@@ -76,7 +76,7 @@ $('#confirm-form').submit(function (event) {
 Swal.fire({
     title: 'Bienvenido!',
     text: 'A la invitacion de Ximena Sophie',
-    confirmButtonColor: '#C1121F',
+    confirmButtonColor: '#DF2E38',
     confirmButtonText: 'Ingresar',
     allowOutsideClick: false,
     background: '#f3f4f6',
