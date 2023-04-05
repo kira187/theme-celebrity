@@ -103,8 +103,8 @@ const sr = ScrollReveal({
 })
 
 sr.reveal(`.agradecimiento`, { origin: 'bottom',duration: 2000, distance: '50%',delay: 0 });
-sr.reveal(`.icon-invitation`, { origin: 'bottom',duration: 2000, distance: '50%',delay: 1000 });
-sr.reveal('.appreciate-presence', { origin: 'bottom',duration: 2000, distance: '50%',delay: 2000 });
+sr.reveal(`.icon-invitation`, { origin: 'bottom',duration: 2000, distance: '50%',delay: 500 });
+sr.reveal('.appreciate-presence', { origin: 'bottom',duration: 2000, distance: '50%',delay: 1000 });
 
 sr.reveal('.section_family', { origin: 'bottom',duration: 2000 });
 sr.reveal('.section_ceremonia_detail', { origin: 'right',duration: 4000 });
@@ -114,11 +114,11 @@ sr.reveal('.section_recepcion', { origin: 'left',duration: 2000 });
 
 sr.reveal('.section_galery', { origin: 'top',duration: 2000 });
 sr.reveal('.galery_item_1', {scale: 0.85});
-sr.reveal('.galery_item_2', {scale: 0.85, delay: 500});
-sr.reveal('.galery_item_3', {scale: 0.85, delay: 1000});
-sr.reveal('.galery_item_4', {scale: 0.85, delay: 1500});
-sr.reveal('.galery_item_5', {scale: 0.85, delay: 1800});
-sr.reveal('.galery_item_6', {scale: 0.85, delay: 1900});
+sr.reveal('.galery_item_2', {scale: 0.85, delay: 250});
+sr.reveal('.galery_item_3', {scale: 0.85, delay: 500});
+sr.reveal('.galery_item_4', {scale: 0.85, delay: 750});
+sr.reveal('.galery_item_5', {scale: 0.85, delay: 900});
+sr.reveal('.galery_item_6', {scale: 0.85, delay: 950});
 
 sr.reveal('.section_mesa_regalos');
 sr.reveal('.section_confirmation',{ origin: 'bottom',duration: 2000 });
