@@ -114,11 +114,11 @@ sr.reveal('.section_recepcion', { origin: 'left',duration: 2000 });
 
 sr.reveal('.section_galery', { origin: 'top',duration: 2000 });
 sr.reveal('.galery_item_1', {scale: 0.85});
-sr.reveal('.galery_item_2', {scale: 0.85, delay: 250});
-sr.reveal('.galery_item_3', {scale: 0.85, delay: 500});
-sr.reveal('.galery_item_4', {scale: 0.85, delay: 750});
-sr.reveal('.galery_item_5', {scale: 0.85, delay: 900});
-sr.reveal('.galery_item_6', {scale: 0.85, delay: 950});
+sr.reveal('.galery_item_2', {scale: 0.85, delay: 150});
+sr.reveal('.galery_item_3', {scale: 0.85, delay: 300});
+sr.reveal('.galery_item_4', {scale: 0.85, delay: 550});
+sr.reveal('.galery_item_5', {scale: 0.85, delay: 700});
+sr.reveal('.galery_item_6', {scale: 0.85, delay: 750});
 
 sr.reveal('.section_mesa_regalos');
 sr.reveal('.section_confirmation',{ origin: 'bottom',duration: 2000 });
