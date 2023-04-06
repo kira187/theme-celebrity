@@ -67,7 +67,7 @@ window.addEventListener('scroll', () => {
 $('#confirm-form').submit(function (event) {
     event.preventDefault();
     const name = $('input').first().val();
-    const text = `Confirmo mi asistencia a la fiesta de Ximena Sophie - Invitado: ${name}`;
+    const text = `Confirmo mi asistencia a la fiesta de Sophie Ximena - Invitado: ${name}`;
     const phoneNumber = '5213320836251';
     const url = 'https://api.whatsapp.com/send?phone=' + phoneNumber + '&text=' + text;
     window.open(url, '_blank');
@@ -75,7 +75,7 @@ $('#confirm-form').submit(function (event) {
 
 Swal.fire({
     title: 'Bienvenido!',
-    text: 'A la invitacion de Ximena Sophie',
+    text: 'A la invitacion de Sophie Ximena',
     confirmButtonColor: '#DF2E38',
     confirmButtonText: 'Ingresar',
     allowOutsideClick: false,
