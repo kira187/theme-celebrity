@@ -7,10 +7,12 @@ const HOUR = 60 * MINUTE;
 const DAY = 24 * HOUR
 
 function addZero(number) {
-  if ( number < 10 )
-      return "0"+number;
+  if ( number < 10 && number >= 0)
+    return "0"+number;
+  else if (isNaN(number) || !number || number < 0)
+    return "00";
   else
-      return number;
+    return number;
 }
 
 setInterval(() => {
